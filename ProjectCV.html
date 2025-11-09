@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiculum Vitae</title>
+</head>
+
+
+<style>
+ html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7f7f2;
+    color: #1e1e24;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 900;
+}
+
+.logo {
+    text-decoration: none;
+    color: #1e1e24;
+    font-family: ;
+    display: flex;
+    padding-left: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    font-family: ;
+}
+
+nav li {
+    padding-left: 50px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #1e1e24;
+    display: inline-block;
+    transition: all 0.6s;
+}
+
+nav li a:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    font-size: ;
+    color: #684c4c;
+}
+
+.beranda  {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    padding: 100px 100px 200px 100px; 
+}
+
+.bio h2 {
+    font-size: 20px;
+    font-family: ;
+}
+
+.nama {
+    font-size: 30px;
+    font-family: ;
+}
+
+.beranda-img {
+    height: 350px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 0 15px 15px 0 #1e1e24;
+    transition: all 0.7s;
+}
+
+.beranda-img:hover {
+    transform: translateY(-5px);
+    box-shadow : 0 0 20px #1e1e24;
+}
+
+.wa {
+    text-decoration: none;
+    color: #f7f7f2;
+    border: 2px solid #1e1e24;
+    box-shadow: 0 5px 5px 0 #1e1e24;
+    background: #1e1e24;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.6s;
+}
+
+.wa:hover {
+    background: #f7f7f2;
+    color:#1e1e24;
+}
+
+.cv {
+    text-decoration: none;
+    color: #f7f7f2;
+    border: 2px solid #1e1e24;
+    box-shadow: 0 5px 5px 0 #1e1e24;
+    background: #1e1e24;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.6s;
+}
+
+.cv:hover {
+    background: #f7f7f2;
+    color:#1e1e24;
+    border: 2px solid #1e1e24;
+}
+
+.tentang-saya {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    padding: 90px 200px 200px 90px;
+    gap: 0; 
+}
+
+.about-img {
+    height: 400px;
+    border-radius: 25px;
+    margin: 20px;
+    transition: all 0.7s;
+    box-shadow: 0 15px 15px 0 #1e1e24;
+}
+
+.about-img:hover {
+    transform: translateY(-5px);
+    box-shadow : 0 0 20px #1e1e24;
+}
+
+b {
+    font-size: 30px;
+}
+
+.keahlian {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    padding: 90px 200px 200px 90px;
+    gap: 5px;
+}
+
+.judul {
+    text-align: center;
+}
+
+.keahlian1 {
+    width: 200px;
+}
+
+.container {
+    padding: 20px 20px 20px 20px;
+    border-radius: 25%;
+    box-shadow: 0 15px 15px 0 #1e1e24;
+    transition: all 0.6s;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+.projek {
+    
+}
+
+.prestasi {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    padding: 90px 200px 200px 90px; 
+}
+
+.prestasi-img {
+    height: 300px;
+    border-radius: 25px;
+    margin: 20px;
+    transition: all 0.7s;
+    box-shadow: 0 15px 15px 0 #1e1e24;
+}
+
+.prestasi-img:hover {
+    transform: translateY(-5px);
+    box-shadow : 0 0 20px #1e1e24;
+}
+
+.hubungi-saya {
+    
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon1 {
+    height: 70px;
+    width: auto;
+    box-shadow: 0 0 20px #1e1e24;
+    transition: all 0.5s;
+}
+
+.icon1:hover {
+    transform: translateY(-5px);
+}
+    </style>
+
+
+<body>
+    <!-- navbar -->
+    <header>
+        <a href="#" class="logo">Portofolio</a>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang-saya">Tentang Saya</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#projek">Projek</a></li>
+                <li><a href="#prestasi">Prestasi</a></li>
+                <li><a href="#hubungi-saya">Hubungi Saya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Beranda -->
+    <section id="beranda">
+        <div class="beranda">
+            <div class="bio">
+                <h2>
+                Halo!, Saya 
+                <br>
+                <span class="nama">Fathan Zada Al Attar</span>
+                <br>
+                Dan Saya Adalah Baginner Front-End Developer
+                <br>
+                </h2>
+                <br>
+                <a href="https://wa.me//+6289528129772" class="wa">Info Kontak</a>
+                <a href="#" class="cv">Unduh CV</a>
+            </div>
+            <img src="image/thanprofile.jpg" alt="profile" class="beranda-img">
+        </div>
+            
+    </section>
+
+    <!-- tentang-saya -->
+    <section id="tentang-saya">
+        <div class="tentang-saya">
+            <img src="image/thanabout.jpg" alt="about" class="about-img">
+            <p>
+                <b>Tentang Saya</b>
+                <br>
+                Saya adalah pelajar dari SMKN Negeri 1 Surabaya kelas 10 RPL 1.
+                Saya memilih mempelajari bidang teknokogi informasi ini karena saya  memiliki ketertarikan pada sesuatu yang berbau teknologi.
+                Selain itu pada era sekarang yang serba digital ini, kita harus bisa cepat menyesuaikan diri agar tidak tertinggal.
+            </p>
+        </div>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="keahlian">
+        <h2 class="judul">Keahlian</h2>
+        <div class="keahlian">
+            <div class="container">
+                <img src="image/html.webp" alt="html" class="keahlian1">
+            </div>
+            <div class="container">
+                <img src="image/python.png" alt="python" class="keahlian1">
+            </div>
+            <div class="container">
+                <img src="image/css.png" alt="css" class="keahlian1">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projek -->
+    <section id="projek">
+        <h2 class="judul">Projek</h2>
+        <div class="projek">
+            <p>Untuk saat ini saya memiliki 2 projek pertama yang telah saya buat, antara lain :
+                <br>
+                1. Projek membuat Input pada HTML
+                2. Projek membuat list buku favorit
+            </p>
+            <br>
+            <a href="../CV/home.html" class="wa"> Projek 1</a>
+            <a href="../Project2.html/style.css" class="wa">Projek 2</a>
+        </div>
+    </section>
+
+    <!-- Prestasi -->
+    <section id="prestasi">
+        <h2 class="judul">Prestasi & Pengalaman</h2>
+        <div class="prestasi-pengalaman">
+            <div class="prestasi">
+                <img src="image/thanprestasi.jpg" alt="prestasi" class="prestasi-img">
+                <p>
+                    <b>Prestasi</b>
+                    <br>
+                    Meraih medali perunggu pada kejuaraan Sakera Cup 2 2024.
+                </p>
+            </div>
+            <h3 class="judul">Pengalaman</h5>
+            <div class="pengalaman">
+                <div>
+                    <h4></h4>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h4></h4>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h4></h4>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>    
+    </section>
+    
+    <!-- Hubungi Saya -->
+    <section id="hubungi-saya">
+        <h2 class="judul">hubungi Saya</h2>
+        <div class="hubungi-saya">
+            <div class="icon">
+                <a href="">
+                    <img src="image/LinkedIn_ICON-removebg-preview.png" alt="LinkedIn" class="icon1">
+                </a>
+                <a href="">
+                    <img src="image/Github_ICON-removebg-preview.png" alt="Github" class="icon1">
+                </a>
+                <a href="">
+                    <img src="image/WhatsApp_ICON-removebg-preview.png" alt="WhatsApp" class="icon1">
+                </a>
+                <a href="">
+                    <img src="image/IG_ICON-removebg-preview.png" alt="IG" class="icon1">
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
