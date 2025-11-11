@@ -6,7 +6,7 @@
     <title>Curiculum Vitae</title>
 </head>
 
-
+<!-- style -->
 <style>
  html {
     scroll-behavior: smooth;
@@ -24,6 +24,9 @@ header {
     top: 0;
     position: sticky;
     z-index: 900;
+    margin-right: 20px;
+    padding: 10px 10px 10px 10px ;
+    background-color: whitesmoke;
 }
 
 .logo {
@@ -71,8 +74,9 @@ nav li a:hover {
 }
 
 .nama {
-    font-size: 30px;
+    font-size: 40px;
     font-family: ;
+
 }
 
 .beranda-img {
@@ -104,21 +108,9 @@ nav li a:hover {
     color:#1e1e24;
 }
 
-.cv {
-    text-decoration: none;
-    color: #f7f7f2;
-    border: 2px solid #1e1e24;
-    box-shadow: 0 5px 5px 0 #1e1e24;
-    background: #1e1e24;
-    padding: 10px;
-    border-radius: 10px;
-    transition: all 0.6s;
-}
-
-.cv:hover {
-    background: #f7f7f2;
-    color:#1e1e24;
-    border: 2px solid #1e1e24;
+.iconberanda {
+    display: flex;
+    gap: 25px;
 }
 
 .tentang-saya {
@@ -148,10 +140,9 @@ b {
 
 .keahlian {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-evenly;   
     align-items: center;
-    padding: 90px 200px 200px 90px;
-    gap: 5px;
+    padding: 90px 200px 300px 90px;
 }
 
 .judul {
@@ -174,12 +165,22 @@ b {
 }
 
 .projek {
-    
+    padding: 90px 200px 200px 90px;
 }
 
-.prestasi {
+.projek p {
+    text-align: center;
+}
+
+.iconproject {
     display: flex;
-    justify-content: space-between;   
+    justify-content: center;
+    gap: 10px;
+}
+
+.prestasi-pengalaman {
+    display: flex;
+    justify-content: space-evenly;   
     align-items: center;
     padding: 90px 200px 200px 90px; 
 }
@@ -210,7 +211,6 @@ b {
 .icon1 {
     height: 70px;
     width: auto;
-    box-shadow: 0 0 20px #1e1e24;
     transition: all 0.5s;
 }
 
@@ -223,7 +223,7 @@ b {
 <body>
     <!-- navbar -->
     <header>
-        <a href="#" class="logo">Portofolio</a>
+        <h2 class="logo">Portofolio</h2>
         <nav>
             <ul>
                 <li><a href="#beranda">Beranda</a></li>
@@ -240,17 +240,20 @@ b {
     <section id="beranda">
         <div class="beranda">
             <div class="bio">
-                <h2>
+                <h1>
                 Halo!, Saya 
                 <br>
                 <span class="nama">Fathan Zada Al Attar</span>
                 <br>
                 Dan Saya Adalah Baginner Front-End Developer
                 <br>
-                </h2>
+                </h1>
                 <br>
-                <a href="https://wa.me//+6289528129772" class="wa">Info Kontak</a>
-                <a href="#" class="cv">Unduh CV</a>
+                <div class="iconberanda">
+                    <a href="https://wa.me//+6289528129772" class="wa">Info Kontak</a>
+                    <a href="#" class="wa">Unduh CV</a>
+                </div>
+                
             </div>
             <img src="image/thanprofile.jpg" alt="profile" class="beranda-img">
         </div>
@@ -289,51 +292,43 @@ b {
 
     <!-- Projek -->
     <section id="projek">
-        <h2 class="judul">Projek</h2>
         <div class="projek">
+        <h2 class="judul">Projek</h2>
             <p>Untuk saat ini saya memiliki 2 projek pertama yang telah saya buat, antara lain :
                 <br>
                 1. Projek membuat Input pada HTML
+                <br>
                 2. Projek membuat list buku favorit
             </p>
             <br>
-            <a href="../CV/home.html" class="wa"> Projek 1</a>
-            <a href="../Project2.html/style.css" class="wa">Projek 2</a>
+            <div class="iconproject">
+                <a href="../CV/home.html" class="wa"> Projek 1</a>
+                <a href="../Project2.html/index.html" class="wa">Projek 2</a>
+            </div>
+            
         </div>
     </section>
 
     <!-- Prestasi -->
     <section id="prestasi">
-        <h2 class="judul">Prestasi & Pengalaman</h2>
         <div class="prestasi-pengalaman">
-            <div class="prestasi">
-                <img src="image/thanprestasi.jpg" alt="prestasi" class="prestasi-img">
-                <p>
-                    <b>Prestasi</b>
-                    <br>
-                    Meraih medali perunggu pada kejuaraan Sakera Cup 2 2024.
-                </p>
-            </div>
-            <h3 class="judul">Pengalaman</h5>
-            <div class="pengalaman">
-                <div>
-                    <h4></h4>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h4></h4>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h4></h4>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </div>    
+            <h2 class="judul">Prestasi & Pengalaman</h2>
+            <img src="image/thanprestasi.jpg" alt="prestasi" class="prestasi-img">
+            <p>
+                <b>Prestasi</b>
+                <br>
+                Meraih medali perunggu pada kejuaraan Sakera Cup 2 2024.
+            </p>
+        </div>
+           
+        <div class="prestasi-pengalaman">
+            <img src="image/osis.jpg" alt="Pengalaman" class="prestasi-img">
+            <p>
+                <b>Pengalaman</b>
+                <br>
+                Aktif dalam kegiatan organisasi di sekolah
+            </p>    
+        </div>   
     </section>
     
     <!-- Hubungi Saya -->
@@ -341,16 +336,13 @@ b {
         <h2 class="judul">hubungi Saya</h2>
         <div class="hubungi-saya">
             <div class="icon">
-                <a href="">
-                    <img src="image/LinkedIn_ICON-removebg-preview.png" alt="LinkedIn" class="icon1">
-                </a>
-                <a href="">
+                <a href="https://github.com/FathanZDA">
                     <img src="image/Github_ICON-removebg-preview.png" alt="Github" class="icon1">
                 </a>
-                <a href="">
+                <a href="https://wa.me//+6289528129772">
                     <img src="image/WhatsApp_ICON-removebg-preview.png" alt="WhatsApp" class="icon1">
                 </a>
-                <a href="">
+                <a href="http://instagram.com/thanzda">
                     <img src="image/IG_ICON-removebg-preview.png" alt="IG" class="icon1">
                 </a>
             </div>
