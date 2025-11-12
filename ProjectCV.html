@@ -68,19 +68,19 @@ nav li a:hover {
     padding: 100px 100px 200px 100px; 
 }
 
-.bio h2 {
-    font-size: 20px;
-    font-family: ;
+.bio h1 {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nama {
-    font-size: 40px;
-    font-family: ;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .beranda-img {
-    height: 350px;
+    height: 400px;
     width: auto;
     border-radius: 50%;
     box-shadow: 0 15px 15px 0 #1e1e24;
@@ -117,8 +117,8 @@ nav li a:hover {
     display: flex;
     justify-content: center;   
     align-items: center;
-    padding: 90px 200px 200px 90px;
-    gap: 0; 
+    padding: 100px 100px 200px 100px;
+    gap: 50px; 
 }
 
 .about-img {
@@ -139,17 +139,21 @@ b {
 }
 
 .keahlian {
+    padding: 100px 200px 200px 100px;
+}
+
+.keahlian1 {
     display: flex;
-    justify-content: space-evenly;   
+    justify-content: center;   
     align-items: center;
-    padding: 90px 200px 300px 90px;
+    gap: 40px;
 }
 
 .judul {
     text-align: center;
 }
 
-.keahlian1 {
+.keahlian2 {
     width: 200px;
 }
 
@@ -165,7 +169,7 @@ b {
 }
 
 .projek {
-    padding: 90px 200px 200px 90px;
+    padding: 100px 200px 200px 100px;
 }
 
 .projek p {
@@ -178,17 +182,21 @@ b {
     gap: 10px;
 }
 
-.prestasi-pengalaman {
+.prestasi-pengalaman1 {
+    padding: 100px 200px 200px 100px;
+}
+
+.prestasi-pengalaman2 {
     display: flex;
-    justify-content: space-evenly;   
-    align-items: center;
-    padding: 90px 200px 200px 90px; 
+    justify-content: center;   
+    align-items: center; 
+    gap: 50px;
+    margin-top: 20px;
 }
 
 .prestasi-img {
     height: 300px;
     border-radius: 25px;
-    margin: 20px;
     transition: all 0.7s;
     box-shadow: 0 15px 15px 0 #1e1e24;
 }
@@ -199,23 +207,64 @@ b {
 }
 
 .hubungi-saya {
-    
+    padding: 100px 200px 200px 100px;
 }
 
 .icon {
     display: flex;
-    gap: 20px;
     justify-content: center;
+    align-items: center;
 }
 
 .icon1 {
-    height: 70px;
+    height: 68px;
     width: auto;
     transition: all 0.5s;
 }
 
 .icon1:hover {
     transform: translateY(-5px);
+}
+
+.icon2 {
+    height: 50px;
+    width: auto;
+    transition: all 0.5s;
+}
+
+.icon2:hover {
+    transform: translateY(-5px);
+}
+
+.icon3 {
+    height: 64px;
+    width: auto;
+    transition: all 0.5s;
+}
+
+.icon3:hover {
+    transform: translateY(-5px);
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
     </style>
 
@@ -276,16 +325,18 @@ b {
 
     <!-- Keahlian -->
     <section id="keahlian">
-        <h2 class="judul">Keahlian</h2>
         <div class="keahlian">
-            <div class="container">
-                <img src="image/html.webp" alt="html" class="keahlian1">
-            </div>
-            <div class="container">
-                <img src="image/python.png" alt="python" class="keahlian1">
-            </div>
-            <div class="container">
-                <img src="image/css.png" alt="css" class="keahlian1">
+            <h2 class="judul">Keahlian</h2>
+            <div class="keahlian1">
+                <div class="container">
+                    <img src="image/html.webp" alt="html" class="keahlian2">
+                </div>
+                <div class="container">
+                    <img src="image/python.png" alt="python" class="keahlian2">
+                </div>
+                <div class="container">
+                    <img src="image/css.png" alt="css" class="keahlian2">
+                </div>
             </div>
         </div>
     </section>
@@ -311,41 +362,55 @@ b {
 
     <!-- Prestasi -->
     <section id="prestasi">
-        <div class="prestasi-pengalaman">
+        <div class="prestasi-pengalaman1">
             <h2 class="judul">Prestasi & Pengalaman</h2>
-            <img src="image/thanprestasi.jpg" alt="prestasi" class="prestasi-img">
-            <p>
-                <b>Prestasi</b>
-                <br>
-                Meraih medali perunggu pada kejuaraan Sakera Cup 2 2024.
-            </p>
+            <div class="prestasi-pengalaman2">
+                <img src="image/thanprestasi.jpg" alt="prestasi" class="prestasi-img">
+                <p>
+                    <b>Prestasi</b>
+                    <br>
+                    Meraih medali perunggu pada kejuaraan Sakera Cup 2 2024.
+                </p>
+
+                <img src="image/osis.jpg" alt="Pengalaman" class="prestasi-img">
+                <p>
+                    <b>Pengalaman</b>
+                    <br>
+                    Aktif dalam kegiatan organisasi di sekolah
+                </p>    
+            </div>   
         </div>
-           
-        <div class="prestasi-pengalaman">
-            <img src="image/osis.jpg" alt="Pengalaman" class="prestasi-img">
-            <p>
-                <b>Pengalaman</b>
-                <br>
-                Aktif dalam kegiatan organisasi di sekolah
-            </p>    
-        </div>   
     </section>
     
     <!-- Hubungi Saya -->
     <section id="hubungi-saya">
-        <h2 class="judul">hubungi Saya</h2>
         <div class="hubungi-saya">
+            <h2 class="judul">Hubungi Saya</h2>
             <div class="icon">
                 <a href="https://github.com/FathanZDA">
                     <img src="image/Github_ICON-removebg-preview.png" alt="Github" class="icon1">
                 </a>
                 <a href="https://wa.me//+6289528129772">
-                    <img src="image/WhatsApp_ICON-removebg-preview.png" alt="WhatsApp" class="icon1">
+                    <img src="image/WhatsApp_ICON-removebg-preview.png" alt="WhatsApp" class="icon2">
                 </a>
                 <a href="http://instagram.com/thanzda">
-                    <img src="image/IG_ICON-removebg-preview.png" alt="IG" class="icon1">
+                    <img src="image/IG_ICON-removebg-preview.png" alt="IG" class="icon3">
                 </a>
             </div>
+
+            <!-- input -->
+            <form action="/submit" method="post">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required/>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required/>
+
+                <label for="pesan">Pesan :</label>
+                <textarea name="pesan" id="pesan" rows="4" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
         </div>
     </section>
 </body>
